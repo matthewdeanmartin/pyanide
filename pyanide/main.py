@@ -10,12 +10,14 @@ import time
 import psutil
 
 
-def kill_process_by_name(name, interval):
+def kill_process_by_name(name: str, interval: int, max_cycles: int = 10) -> None:
     """Kills a process by name and periodically checks if it has come back.
 
     Created with help from ChatGPT.
     """
-    while True:
+    cycle = 0
+    while True and cycle < max_cycles:
+        cycle += 1
         # Check if the process is running
         for process in psutil.process_iter(["pid", "name"]):
             if process.info["name"] == name:
@@ -26,7 +28,7 @@ def kill_process_by_name(name, interval):
         time.sleep(interval)
 
 
-def kill_current_process():
+def kill_current_process() -> None:
     """Kills the current process.
 
     Created with help from ChatGPT.
@@ -42,7 +44,7 @@ def kill_current_process():
         os.kill(pid, signal.SIGTERM)
 
 
-def kill_function_on_high_memory_usage(max_memory_usage):
+def kill_function_on_high_memory_usage(max_memory_usage: int):
     """Kills a function if it uses too much memory."""
 
     def decorator(func):
