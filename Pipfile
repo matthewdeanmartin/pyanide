@@ -1,0 +1,22 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+psutil = "*"
+
+[dev-packages]
+pytest = "*"
+vermin = "*"
+hypothesis = {extras = ["cli"], version = "*"}
+pre-commit = "*"
+mypy = "*"
+pytest-cov = "*"
+ruff = "*"
+linkcheckmd = "*"
+tox = "*"
+scriv = "*"
+
+[requires]
+python_version = "3.11"
