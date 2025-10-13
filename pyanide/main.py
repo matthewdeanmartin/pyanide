@@ -1,6 +1,7 @@
 """
 This module contains functions for killing processes.
 """
+
 import ctypes
 import functools
 import os

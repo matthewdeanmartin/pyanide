@@ -1,4 +1,5 @@
 """CLI interface for pyanide"""
+
 import argparse
 
 from pyanide import kill_process_by_name
