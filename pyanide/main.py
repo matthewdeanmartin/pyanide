@@ -36,9 +36,9 @@ def kill_current_process() -> None:
     """
     if os.name == "nt":
         # Get the process handle
-        handle = ctypes.windll.kernel32.OpenProcess(1, False, os.getpid())
+        handle = ctypes.windll.kernel32.OpenProcess(1, False, os.getpid())  # type: ignore[attr-defined]
         # Terminate the process
-        ctypes.windll.kernel32.TerminateProcess(handle, -1)
+        ctypes.windll.kernel32.TerminateProcess(handle, -1)  # type: ignore[attr-defined]
     else:
         # Use the Unix-specific signal.SIGTERM signal to kill the process
         pid = os.getpid()
