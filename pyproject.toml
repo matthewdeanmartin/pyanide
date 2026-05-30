@@ -26,7 +26,7 @@ Repository = "https://github.com/matthewdeanmartin/pyanide"
 Homepage = "https://github.com/matthewdeanmartin/pyanide"
 Documentation = "https://github.com/matthewdeanmartin/pyanide"
 "Bug Tracker" = "https://github.com/matthewdeanmartin/pyanide/issues"
-"Change Log" = "https://github.com/matthewdeanmartin/pyanide/blob/main/CHANGES.md"
+"Change Log" = "https://github.com/matthewdeanmartin/pyanide/blob/main/CHANGELOG.md"
 
 [build-system]
 requires = ["hatchling>=1.27.0"]

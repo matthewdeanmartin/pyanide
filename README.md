@@ -25,3 +25,10 @@ pip install pyanide
 ## Documentation
 
 - [TODO](https://github.com/matthewdeanmartin/pyanide/blob/main/docs/TODO.md)
+
+## Project Links
+
+- [GitHub](https://github.com/matthewdeanmartin/pyanide)
+- [PyPI](https://pypi.org/project/pyanide/)
+- [Bug Tracker](https://github.com/matthewdeanmartin/pyanide/issues)
+- [Change Log](https://github.com/matthewdeanmartin/pyanide/blob/main/CHANGELOG.md)
